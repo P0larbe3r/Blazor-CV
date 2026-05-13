@@ -1,9 +1,17 @@
-.nav-containter {
-    display: flex;
-    position: relative;
+.navbar {
+        background-color: #420180;
+        display: flex;
+        
 }
+.nav-brand-header{
+    background-color: #000000;
+    color: white;
+    min-height: 3.5rem;
+    border-bottom: 1px solid #333131;
+} 
 
 .navbar-toggler {
+    display: none;
     appearance: none;
     cursor: pointer;
     width: 3.5rem;
@@ -26,6 +34,7 @@
 }
 
 .navbar-brand {
+    padding-top: 1rem;
     font-size: 1.1rem;
 }
 
@@ -56,25 +65,21 @@
     padding-bottom: 0.5rem;
 }
 
-    .nav-item:first-of-type {
-        padding-top: 1rem;
-    }
+.nav-item:last-of-type {
+    padding-bottom: 1rem;
+}
 
-    .nav-item:last-of-type {
-        padding-bottom: 1rem;
-    }
-
-    .nav-item ::deep .nav-link {
-        color: #d7d7d7;
-        background: none;
-        border: none;
-        border-radius: 4px;
-        height: 3rem;
-        display: flex;
-        align-items: center;
-        line-height: 3rem;
-        width: 100%;
-    }
+.nav-item ::deep .nav-link {
+    color: #d7d7d7;
+    background: none;
+    border: none;
+    border-radius: 4px;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    line-height: 3rem;
+    width: 100%;
+}
 
 .nav-item ::deep a.active {
     background-color: rgba(255,255,255,0.37);
@@ -86,25 +91,27 @@
     color: white;
 }
 
-.nav-scrollable {
-    display: none;
+.navbar-toggler:checked ~ .nav {
+        display: block;
 }
 
-.navbar-toggler:checked ~ .nav-scrollable {
-    display: block;
+@media (max-width: 641px) {
+    .navbar-toggler:not(:checked) ~ .navbar {
+        background-color:#FFFFFF; ;
 }
 
-@media (min-width: 641px) {
     .navbar-toggler {
-        display: none;
+        display: block;
     }
 
-    .nav-scrollable {
-        /* Never collapse the sidebar for wide screens */
-        display: block;
-
-        /* Allow sidebar to scroll for tall menus */
-        height: calc(100vh - 3.5rem);
+    .nav {
+        width: 100%;
+        display: none;
+        flex-direction: column;
         overflow-y: auto;
+    }
+
+    .navbar-toggler:checked ~ .navbar .nav {
+        display: flex;
     }
 }

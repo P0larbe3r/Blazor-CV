@@ -4,11 +4,13 @@
 @inject IHttpClientFactory HttpClientFactory
 @inject HttpClient Http
 @rendermode InteractiveServer
+
 <PageTitle>Api Intergration</PageTitle>
 
 <h1>Dad Joke Api Intergration</h1>
 
 <p>This component demonstrates how you can intergrate a third party API to get and show data. It also shows how you can use local storage to store the data to help prevent as many API calls.</p>
+<p>This intergration was done using the Api by <a href="https://icanhazdadjoke.com/">icanhazdadjoke.com</a>  </p>
 
 <button class="btn btn-primary" @onclick="async () => await GetNewJoke()" > New Joke</button>
 <button class="btn btn-danger" @onclick="async () => await ClearJokes()" > Clear Jokes</button>

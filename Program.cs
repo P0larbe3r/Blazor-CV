@@ -1,10 +1,20 @@
 using Blazor_CV_App.Components;
+using Blazored.LocalStorage;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents();
+builder.Services.AddBlazoredLocalStorage();
+builder.Services.AddScoped<LocalStorageService>();
+
+builder.Services.AddHttpClient("DadJokeApi", client =>
+{
+    client.BaseAddress = new Uri("https://icanhazdadjoke.com/");
+    client.DefaultRequestHeaders.Accept.Add(new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue("application/json"));
+});
 
 var app = builder.Build();
 
