@@ -58,33 +58,33 @@ else
         }
 
     }
-private async Task RefreshLocalStorage(){
+    private async Task RefreshLocalStorage(){
 
-    dadJokeList = await LocalStorage.LoadAsync<List<DadJokes>>("Jokes") ?? new List<DadJokes>();
-  
-}
- private async Task GetJoke()
-{
-    var client = HttpClientFactory.CreateClient("DadJokeApi");
-
-    var dadJoke = await client.GetFromJsonAsync<DadJokes>("/");
-
-    if (dadJoke != null)
-    {
-        dadJokeList?.Add(dadJoke);
-        await LocalStorage.SaveAsync("Jokes", dadJokeList);
+        dadJokeList = await LocalStorage.LoadAsync<List<DadJokes>>("Jokes") ?? new List<DadJokes>();
+    
     }
-}
+    private async Task GetJoke()
+    {
+        var client = HttpClientFactory.CreateClient("DadJokeApi");
 
-private async Task ClearJokes(){
-    await LocalStorage.SaveAsync("Jokes", new List<DadJokes>());
-    await RefreshLocalStorage();
-}
+        var dadJoke = await client.GetFromJsonAsync<DadJokes>("/");
 
-private async Task GetNewJoke(){
-    await GetJoke();
-    await RefreshLocalStorage();
-}
+        if (dadJoke != null)
+        {
+            dadJokeList?.Add(dadJoke);
+            await LocalStorage.SaveAsync("Jokes", dadJokeList);
+        }
+    }
+
+    private async Task ClearJokes(){
+        await LocalStorage.SaveAsync("Jokes", new List<DadJokes>());
+        await RefreshLocalStorage();
+    }
+
+    private async Task GetNewJoke(){
+        await GetJoke();
+        await RefreshLocalStorage();
+    }
     private class DadJokes
     {
         public string Id { get; set; } = string.Empty;
