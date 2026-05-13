@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "x4C2rdzicrg=",
+  "dgSpecHash": "n3r+GPKd4rk=",
   "success": true,
-  "projectFilePath": "c:\\GitHub projects\\Blazer CV\\Blazor CV App\\Blazor CV App.csproj",
+  "projectFilePath": "c:\\GitHub projects\\Git Blazor App\\Blazor-CV\\Blazor CV App.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\polar\\.nuget\\packages\\microsoft.aspnetcore.app.internal.assets\\10.0.8\\microsoft.aspnetcore.app.internal.assets.10.0.8.nupkg.sha512"
   ],

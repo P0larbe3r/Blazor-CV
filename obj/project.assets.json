@@ -50,11 +50,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\GitHub projects\\Blazer CV\\Blazor CV App\\Blazor CV App.csproj",
+      "projectUniqueName": "C:\\GitHub projects\\Git Blazor App\\Blazor-CV\\Blazor CV App.csproj",
       "projectName": "Blazor_CV_App",
-      "projectPath": "C:\\GitHub projects\\Blazer CV\\Blazor CV App\\Blazor CV App.csproj",
+      "projectPath": "C:\\GitHub projects\\Git Blazor App\\Blazor-CV\\Blazor CV App.csproj",
       "packagesPath": "C:\\Users\\polar\\.nuget\\packages\\",
-      "outputPath": "C:\\GitHub projects\\Blazer CV\\Blazor CV App\\obj\\",
+      "outputPath": "C:\\GitHub projects\\Git Blazor App\\Blazor-CV\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\polar\\AppData\\Roaming\\NuGet\\NuGet.Config",
