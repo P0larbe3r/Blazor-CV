@@ -1,7 +1,101 @@
 ﻿@page "/"
+@rendermode InteractiveServer
 
 <PageTitle>Home</PageTitle>
 
-<h1>Hello, world!</h1>
+<h1 style="text-align: center"> Joshua Watson CV</h1>
+<div class="cv-container">
+    <div class="header-container">
+        <div class="my-name">
+            <span>
+                Joshua Watson
+            </span>
+        </div>
+        <div>
+            <span class="subtitles"> Apprentice Full Stack Software Developer</span>
+        </div>
+        <div>
+            <span class="subline"> Degree - L6 Digital Technology Solutions (In progress)</span>
+        </div>
+    </div>
+    <div class="cv-details">
+        <CollapsibleSection Title="About Me" InitiallyOpen="true">
+            <p>
+                Software Development Apprentice with 1 year of commercial experience delivering production-grade software in a large-scale ERP environment.
+                Strong integration and API-focused developer with proven impact in improving system reliability, enabling system integrations, and supporting safe production deployments across enterprise systems.
+            </p>
+            <p>
+                Experienced across full-stack development (Angular, React, .NET, Python, SQL Server), working within complex enterprise codebases to deliver features, reduce production risk, improve maintainability, and support business-critical workflows.
+            </p>
+        </CollapsibleSection>
+        
+        <CollapsibleSection Title="Technical Skills" InitiallyOpen="false">
+            <ul>
+                <li><strong>Frontend:</strong> Angular 9, Angular 18, React, JavaScript/TypeScript, HTML, CSS</li>
+                <li><strong>Backend:</strong> .NET Framework 4.8, .NET 8, ASP.NET Core, Python (FastAPI, Django), LINQ</li>
+                <li><strong>Database:</strong> SQL Server, T-SQL</li>
+                <li><strong>Integration:</strong> REST APIs, system integrations, data migration workflows</li>
+                <li><strong>Tools:</strong> Azure DevOps, Git, Visual Studio, JetBrains IDEs</li>
+                <li><strong>Practices:</strong> Agile, Scrum, TDD, CI/CD awareness</li>
+                <li><strong>Other:</strong> ERP systems, production deployments, technical documentation</li>
+            </ul>
+        </CollapsibleSection>
 
-Welcome to your new app.
+        <CollapsibleSection Title="My Experience" InitiallyOpen="false">
+            <h5><strong>Software Development Apprentice</strong></h5>
+            <h6><strong> Logma System Designs LTD, 2025</strong> - Present </h6>
+            <ul>
+                <li>Improved core ERP workflows by delivering feature enhancements that increased operational efficiency and reduced friction in business-critical processes</li>
+                <li>Supported enterprise Angular migration (v9 → v18), reducing long-term technical debt and improving maintainability of the front-end architecture</li>
+                <li>Delivered backend services in .NET (4.8 & .NET 8) and Python, enabling new automation capabilities and supporting critical business logic across systems</li>
+                <li>Improved system performance and reporting reliability by optimising SQL Server queries and restructuring inefficient database operations</li>
+                <li>Reduced production deployment risk by introducing controlled release patterns including feature flagging and structured data migration approaches</li>
+                <li>Enabled reliable third-party system integrations, improving data consistency and reducing manual reconciliation effort across platforms</li>
+                <li>Strengthened system security posture through secure coding practices and improved awareness of cyber security principles in production environments</li>
+                <li>Improved engineering visibility and maintainability by producing and maintaining technical documentation for systems and processes</li>
+                <li>Contributed to more predictable sprint delivery and improved team throughput through Azure DevOps sprint planning and release tracking</li>
+                <li>Supported Agile delivery as co-Scrum lead, improving sprint structure, prioritisation, and team delivery consistency</li>
+                <li>Automated internal workflows using Python, reducing manual operational effort and improving process efficiency</li>
+            </ul>
+        </CollapsibleSection>
+        <CollapsibleSection Title="Education" InitiallyOpen="false">
+            <div>
+                <span>
+                    <strong>BSc Digital Technology Solutions Degree Apprenticeship</strong>
+                </span>
+                <br/>
+                <span>
+                    UCLan Burnley Campus — In Progress
+                </span>
+                
+            </div>
+            <br/>
+            <div>
+                <span> <strong>T Level in Software Development (Merit)</strong></span>
+                <br/>
+                <span>
+                    Runshaw College
+                </span>
+            </div>
+        </CollapsibleSection>
+        <CollapsibleSection Title="Projects" InitiallyOpen="false">
+            <ul>
+                <li>Built full-stack applications using React and FastAPI, improving capability in API design, integration patterns, and scalable architecture</li>
+                <li>Developed Django-based applications to strengthen backend engineering skills and structured development practices</li>
+                <li>Created a Python-based golf score tracking system integrating external data sources and location-based services to automate manual tracking processes</li>
+                <li>Applied Test Driven Development (TDD) across personal projects, improving code reliability and reducing defect introduction</li>
+                <li>Contributed to live ERP production systems, supporting stable releases and reducing deployment risk through structured release processes</li>
+                <li>Participated in enterprise Angular migration (v9 → v18), improving system performance, maintainability, and long-term scalability</li>
+                <li>Built a personal portfolio showcase using Blazor WebAssembly, demonstrating full-stack capability through reusable component architecture, API integration, and responsive design across device sizes</li>
+            </ul>
+        </CollapsibleSection>
+        <CollapsibleSection Title="Additional Interests" InitiallyOpen="false">
+            
+            <ul>
+                <li>Strong interest in integration-heavy, API-driven enterprise systems</li>
+                <li>Focused on building maintainable, production-ready software with real business impact</li>
+                <li>Motivated by high-quality engineering environments with strong standards and continuous improvement</li>
+            </ul>
+        </CollapsibleSection>
+    </div>
+</div>

@@ -1,0 +1,84 @@
+
+.my-name{
+    font-weight: bolder;
+    font-size:  2rem;
+}
+.cv-container {
+    border: #1a1d20 solid 2px;
+    display: flex;
+    flex-direction:  column;
+    justify-self: center;
+}
+.cv-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2rem;
+}
+.subtitles{
+    font-size:  1.5rem;
+    font-weight: bold;
+}
+.subline{
+    font-size: 1.25rem;
+}
+
+.standard-text{
+    font-size: 1rem;
+}
+@media screen and (min-width: 1001px) {
+    .cv-container{
+        width: 75vw;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    .header-container{
+        margin-left: 30px;
+        margin-top : 20px;
+    }
+
+}
+@media screen and (max-width: 1000px) {
+    .cv-container{
+        width: 90vw;
+    }
+    .header-container{
+        margin-left: 30px;
+        margin-top : 20px;
+    }
+    .subtitles{
+        font-size:  1.25rem;
+    }
+    .subline{
+        font-size: 1rem;
+    }
+}
+
+ul li{
+    margin-bottom: 13px;
+}
+@media screen and (max-width: 600px) {
+    .cv-container{
+        width: 90vw;
+        padding: 10px;
+    }
+    .header-container{
+        margin-left: 0;
+        margin-top : 0;
+    }
+    .my-name{
+        font-weight: bold;
+        font-size:  1.5rem;
+    }
+    .subtitles{
+        font-size:  1rem;
+    }
+    .subline{
+        font-size: 0.8rem;
+    }
+    .standard-text{
+        font-size: 0.8rem;
+    }
+}
+
